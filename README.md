@@ -6,91 +6,107 @@ project demonstrates clean architecture principles, type safety, and
 professional development tooling while maintaining simplicity suitable for
 educational purposes.
 
-# 🚀 Project Overview
+## 🚀 Project Overview
 
 This project serves as a learning-focused REST API implementation, emphasizing:
 
-Type Safety: Leveraging TypeScript for robust type definitions.
+- **Type Safety**: Leveraging TypeScript for robust type definitions.
+- **Clean Architecture**: Separation of concerns across controllers, routes, and
+  data layers.
+- **Mock Data Infrastructure**: In-memory data stores for development and
+  testing.
+- **Professional Tooling**: Integration of ESLint, Prettier, and nodemon for
+  code quality and development efficiency.
 
-Clean Architecture: Separation of concerns across controllers, routes, and data
-layers.
-
-Mock Data Infrastructure: In-memory data stores for development and testing.
-
-Professional Tooling: Integration of ESLint, Prettier, and nodemon for code
-quality and development efficiency.
-
-# 🏗️ Architecture
+## 🏗️ Architecture
 
 The application follows a layered architecture pattern with clear separation of
 concerns:
 
-less Copy Edit src/ ├── controllers/ // Route handlers ├── infrastructure/ //
-Mock data and stores ├── routes/ // API route definitions ├── types/ //
-TypeScript interfaces and types ├── utils/ // Utility functions └── index.ts //
-Application entry point Key Components Controllers: Handle HTTP requests and
-responses.
+```
+src/
+├── controllers/       // Route handlers
+├── infrastructure/    // Mock data and stores
+├── routes/            // API route definitions
+├── types/             // TypeScript interfaces and types
+├── utils/             // Utility functions
+└── index.ts           // Application entry point
+```
 
-Routes: Define API endpoints and associate them with controllers.
+### Key Components
 
-Mock Data: Generate and store mock user data for development purposes.
+- **Controllers**: Handle HTTP requests and responses.
+- **Routes**: Define API endpoints and associate them with controllers.
+- **Mock Data**: Generate and store mock user data for development purposes.
+- **Types**: Define interfaces for User and UserDetails entities.
 
-Types: Define interfaces for User and UserDetails entities.
-
-# 🧪 Mock Data Infrastructure
+## 🧪 Mock Data Infrastructure
 
 The project includes a sophisticated mock data system for development and
 testing:
 
-User Store: In-memory array of user objects with basic information.
+- **User Store**: In-memory array of user objects with basic information.
+- **UserDetails Store**: Extended user information linked by user ID.
+- **Data Generators**: Functions to create consistent and realistic mock data.
 
-UserDetails Store: Extended user information linked by user ID.
+## 🛠️ Development Environment
 
-Data Generators: Functions to create consistent and realistic mock data.
+### Prerequisites
 
-# 🛠️ Development Environment
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/)
 
-Prerequisites Node.js (v14 or higher)
+### Installation
 
-npm or Yarn
+1. Clone the repository:
 
-Installation Clone the repository:
+   ```bash
+   git clone https://github.com/Robertcego/express-rest-api-practice.git
+   cd express-rest-api-practice
+   ```
 
-bash Copy Edit git clone
-https://github.com/Robertcego/express-rest-api-practice.git cd
-express-rest-api-practice Install dependencies:
+2. Install dependencies:
 
-bash Copy Edit npm install
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
+### Running the Application
+
+Start the development server with hot reloading:
+
+```bash
+npm run dev
 # or
+yarn dev
+```
 
-yarn install Running the Application Start the development server with hot
-reloading:
+The server will start on `http://localhost:8080`.
 
-bash Copy Edit npm run dev
+## 📚 API Reference
 
-# or
+### Health Check
 
-yarn dev The server will start on http://localhost:8080.
+- **GET** `/health`  
+  Returns the status of the API.
 
-# 📚 API Reference
+### Users
 
-Health Check GET /health Returns the status of the API.
+- **GET** `/users`  
+  Retrieves a list of all users.
 
-Users GET /users Retrieves a list of all users.
+- **GET** `/users/:id`  
+  Retrieves detailed information for a specific user by ID.
 
-GET /users/:id Retrieves detailed information for a specific user by ID.
+## ✅ Code Quality Tools
 
-# ✅ Code Quality Tools
+- **ESLint**: Linting for code consistency.
+- **Prettier**: Code formatting.
+- **nodemon**: Automatically restarts the server on code changes.
+- **ts-node-dev**: TypeScript execution environment with hot reloading.
 
-ESLint: Linting for code consistency.
-
-Prettier: Code formatting.
-
-nodemon: Automatically restarts the server on code changes.
-
-ts-node-dev: TypeScript execution environment with hot reloading.
-
-# 📄 License
+## 📄 License
 
 This project is licensed under the MIT License.
