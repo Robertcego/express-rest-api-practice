@@ -10,8 +10,8 @@ export default function routes(app: Application): void {
   app.get('/health', healthCheckController);
 
   // User routes
-  app.get('/users', getUsersController); // ✅ GET all users
-  app.get('/users/:id', getUserDetailsController); // ✅ GET one user by ID
+  app.get('/users', getUsersController);
+  app.get('/users/:id', getUserDetailsController); 
 
   // Root route
   app.get('/', (_req: Request, res: Response) => {
