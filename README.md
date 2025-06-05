@@ -29,7 +29,6 @@ src/
 ├── infrastructure/    // Mock data and stores
 ├── routes/            // API route definitions
 ├── types/             // TypeScript interfaces and types
-├── utils/             // Utility functions
 └── index.ts           // Application entry point
 ```
 
@@ -83,7 +82,7 @@ npm run dev
 yarn dev
 ```
 
-The server will start on `http://localhost:8080`.
+The server listens on `http://localhost:3000` by default. You can override this by setting the `PORT` environment variable.
 
 ## 📚 API Reference
 
