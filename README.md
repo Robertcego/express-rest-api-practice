@@ -186,3 +186,5 @@ This project is licensed under the MIT License.
 This project is part of a personal learning journey into backend development and
 clean architecture patterns in Node.js with TypeScript. Feel free to fork,
 explore, and adapt!
+
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/Robertcego/express-rest-api-practice)
