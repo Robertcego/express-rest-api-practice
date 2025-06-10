@@ -5,11 +5,6 @@ import { userStore } from '../../infrastructure/mock-data/store';
 /**
  * Handles the retrieval of all users.
  * Fetches all users from the mock store and returns them in the response.
- *
- * @function
- * @param {Request} req - Express request object
- * @param {Response} res - Express response object
- * @returns {void}
  */
 
 const getUsersController = async (

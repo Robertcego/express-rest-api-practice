@@ -5,10 +5,6 @@ import { userDetailsStore } from '../../infrastructure/mock-data/store/';
  * Handles the retrieval of user details by ID.
  * Fetches a user from the mock store and returns it in the response.
  *
- * @function
- * @param {Request} req - Express request object
- * @param {Response} res - Express response object
- * @returns {void}
  */
 
 const getUserDetailsController = async (
