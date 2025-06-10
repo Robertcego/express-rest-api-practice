@@ -1,3 +1,4 @@
+import { randomUUID } from 'crypto';
 import { User } from '../../../types/Users';
 
 export function generateUsersMockData(): User[] {
@@ -5,7 +6,7 @@ export function generateUsersMockData(): User[] {
 
   return [
     {
-      id: crypto.randomUUID(),
+      id: randomUUID(),
       firstName: 'John',
       lastName: 'Doe',
       createdAt: now,
@@ -13,7 +14,7 @@ export function generateUsersMockData(): User[] {
       isActive: true,
     },
     {
-      id: crypto.randomUUID(),
+      id: randomUUID(),
       firstName: 'Jane',
       lastName: 'Smith',
       createdAt: now,
@@ -21,7 +22,7 @@ export function generateUsersMockData(): User[] {
       isActive: true,
     },
     {
-      id: crypto.randomUUID(),
+      id: randomUUID(),
       firstName: 'Alice',
       lastName: 'Johnson',
       createdAt: now,
@@ -29,7 +30,7 @@ export function generateUsersMockData(): User[] {
       isActive: false,
     },
     {
-      id: crypto.randomUUID(),
+      id: randomUUID(),
       firstName: 'Bob',
       lastName: 'Brown',
       createdAt: now,
@@ -37,7 +38,7 @@ export function generateUsersMockData(): User[] {
       isActive: true,
     },
     {
-      id: crypto.randomUUID(),
+      id: randomUUID(),
       firstName: 'Charlie',
       lastName: 'Davis',
       createdAt: now,
