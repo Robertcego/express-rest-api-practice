@@ -20,6 +20,7 @@ const getUserDetailsController = async (
     const userDetails = userDetailsStore.find((user) => user.id === id);
     if (!userDetails) {
       res.status(404).json({ error: 'User not found' });
+      return;
     }
 
     res.status(200).json(userDetails);
